@@ -1,0 +1,48 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.orderId {
+  font-weight: bold;
+  color: #333;
+}
+
+.status {
+  background-color: #e0e0e0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.details {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .details {
+    font-size: 0.9rem;
+  }
+}
